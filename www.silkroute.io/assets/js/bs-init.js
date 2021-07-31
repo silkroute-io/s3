@@ -1,10 +1,12 @@
+
 if (window.innerWidth < 768) {
-	$('[data-bss-disabled-mobile]').removeClass('animated').removeAttr('data-aos data-bss-hover-animate');
+	[].slice.call(document.querySelectorAll('[data-bss-disabled-mobile]')).forEach(function (elem) {
+		elem.classList.remove('animated');
+		elem.removeAttribute('data-bss-hover-animate');
+		elem.removeAttribute('data-aos');
+	});
 }
 
-$(document).ready(function(){
-
-	$('[data-bss-hover-animate]')
-		.mouseenter( function(){ var elem = $(this); elem.addClass('animated ' + elem.attr('data-bss-hover-animate')) })
-		.mouseleave( function(){ var elem = $(this); elem.removeClass('animated ' + elem.attr('data-bss-hover-animate')) });
-});
+document.addEventListener('DOMContentLoaded', function() {
+	AOS.init();
+}, false);
