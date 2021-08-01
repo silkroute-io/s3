@@ -34,10 +34,6 @@
   color: inherit;
 }
 
-.contact-clean .form-group:last-child {
-  margin-bottom: 5px;
-}
-
 .contact-clean form .form-control {
   background: #fff;
   border-radius: 2px;
