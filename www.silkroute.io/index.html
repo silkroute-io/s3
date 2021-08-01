@@ -164,8 +164,8 @@
                 <section class="contact-clean" style="padding-left: 0px;padding-bottom: 10px;padding-top: 10px;background: var(--bs-white);">
                     <form id="contact_form" method="post" action="https://post.silkroute.io/tech@silkroute.io" style="padding-top: 20px;padding-bottom: 20px;">
                         <h2 class="text-center">Contact us</h2>
-                        <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-                        <div class="mb-3"><select class="form-select" name="country">
+                        <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Name" required="true"></div>
+                        <div class="mb-3"><select class="form-select" name="country" required="true">
    <option value="Afganistan">Afghanistan</option>
    <option value="Albania">Albania</option>
    <option value="Algeria">Algeria</option>
@@ -415,7 +415,7 @@
         
     </optgroup>
 </select></div>
-                        <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                        <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" required="true"></div>
                         <div class="mb-3"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
                         <div class="mb-3"><button class="btn btn-primary" type="submit" style="background: rgb(5, 90, 218);">send </button></div>
                     </form>
